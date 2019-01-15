@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jx.com.shoppingtrolley_zihenguncle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoTitle_FullScreen">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoTitle_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.HomepageActivity" />
+        <activity android:name=".activity.DetailsActivity" />
+        <activity android:name=".activity.MyFootPrint" />
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.MyAddressActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.MywalletActivity" />
+        <activity android:name=".circle.MyCircleActivity" />
+        <activity android:name=".activity.PersonalActivity" />
+        <activity android:name=".order.take_circle.TakeActivity"></activity>
+    </application>
+
+</manifest>

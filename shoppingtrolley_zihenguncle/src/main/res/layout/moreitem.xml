@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_151"
+    android:layout_height="@dimen/dp_174"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_style"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/more_simple"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="@dimen/dp_102"
+        app:placeholderImage="@drawable/tab_home_bottom_gouwuche"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+    <TextView
+        android:id="@+id/more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_131"
+        android:layout_below="@+id/more_simple"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="this is title"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        />
+    <TextView
+        android:id="@+id/more_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/colorRad"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="this is price"
+        />
+    <TextView
+        android:id="@+id/more_shownum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_title"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/sp_10"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_13"
+        android:text="this is "
+        />
+
+</RelativeLayout>

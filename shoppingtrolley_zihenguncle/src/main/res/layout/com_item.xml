@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/ddh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+    <TextView
+        android:id="@+id/orderid_com_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ddh"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="this is orderid"
+        />
+    <ImageView
+        android:id="@+id/more_com_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_btn_more_purple_n"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reycle_com_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderid_com_item"
+        android:layout_marginTop="@dimen/dp_10"
+        ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

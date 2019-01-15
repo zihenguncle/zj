@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingRight="@dimen/dp_24"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_108"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/item_style"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_20"
+        android:orientation="vertical"
+        >
+
+        <RadioGroup
+            android:id="@+id/group_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/image_allorders"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/quanbudd_ddf"
+                android:button="@null"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/image_obligation"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/daifuk_ddf"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/image_forCollection"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/daishouh_ddf"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/image_beevaluated"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/daipingj_ddf"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/image_completed"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/yiwanc_ddf"
+                android:button="@null" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_10"
+            >
+            <TextView
+                android:id="@+id/image_allorders_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全部订单"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/image_obligation_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="代付款"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/image_forCollection_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="待收款"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/image_beevaluated_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="待评价"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/image_completed_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="已完成"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+
+
+</LinearLayout>

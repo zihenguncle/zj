@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_style"
+    >
+    <ImageView
+        android:id="@+id/item_foot_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        />
+     <TextView
+         android:id="@+id/item_foot_content"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/item_foot_image"
+         android:text="text"
+         android:layout_marginTop="@dimen/dp_10"
+         android:textSize="@dimen/sp_10"
+         android:textColor="#666666"
+         android:ellipsize="end"
+         />
+    <TextView
+        android:id="@+id/item_foot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_foot_content"
+        android:text="text"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/colorRad"
+        />
+    <TextView
+        android:id="@+id/item_foot_browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_foot_content"
+        android:text="text"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_10"
+        android:textColor="#666666"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+    <TextView
+        android:id="@+id/item_foot_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_foot_browse"
+        android:text="text"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_10"
+        android:textColor="#666666"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_style"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_circle_image_name"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:placeholderImage="@drawable/tab_home_bottom_gouwuche"
+        app:roundAsCircle="true"
+        />
+    <TextView
+        android:id="@+id/item_circle_name"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_circle_image_name"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="this is name"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_100"
+        android:textSize="@dimen/sp_14"
+        />
+    <TextView
+        android:id="@+id/item_circle_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/sp_10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/sp_12"
+        android:text="this is date"
+        android:layout_marginTop="@dimen/dp_30"
+        />
+    <TextView
+        android:id="@+id/item_circle_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_circle_image_name"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="this is content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/colorGray"
+        />
+    <ImageView
+        android:id="@+id/item_circle_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_below="@+id/item_circle_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+    <ImageView
+        android:id="@+id/item_circle_whitehand"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_below="@+id/item_circle_image_view"
+        android:layout_toLeftOf="@+id/item_circle_handnum"
+        android:src="@drawable/common_btn_prise_n"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+    <TextView
+        android:id="@+id/item_circle_handnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_circle_image_view"
+        android:layout_marginRight="@dimen/dp_24"
+        android:text="num"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/colorGray"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        />
+
+
+</RelativeLayout>
